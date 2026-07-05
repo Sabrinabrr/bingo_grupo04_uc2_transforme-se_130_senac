@@ -1,17 +1,16 @@
-// Banco de dados
-export function database(){
-// inicio dos vetores do sistema
-    let numerosDisponiveis = [];
-    let numerosSorteados = [];
-    let ultimoNumeroSorteado = null;
+// Banco de dados do bingo
 
-    numerosDisponiveis = [];
-    numerosSorteados = [];
-    ultimoNumeroSorteado = null;
-    
-     // inicinado o laço de repetição para os numeros disponivel 
+const database = {
+    numerosDisponiveis: [],
+    numerosSorteados: [],
+    ultimoNumeroSorteado: null
+};
 
-     for (let i = 1; i <= 75; i++) {
-        numerosDisponiveis.push(i);
-    }
+// preenchendo os números disponíveis
+for(let i = 1; i <= 75; i++) {
+    database.numerosDisponiveis.push(i);
 }
+
+module.exports = {
+    database
+};

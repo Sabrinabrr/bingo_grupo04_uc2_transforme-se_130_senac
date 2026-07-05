@@ -1,4 +1,8 @@
-export function mostrarRegistroSistema() {
+function mostrarRegistroSistema() {
     // lógica para mostrar registro..
 
 }
+
+module.exports = {
+    mostrarRegistroSistema
+};
