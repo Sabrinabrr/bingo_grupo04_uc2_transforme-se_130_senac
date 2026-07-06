@@ -36,9 +36,10 @@ function menu() {
             mostrarHistorico();
             menu(); // reiniciando o menu
             
-        } else if(escolha == 3) {
-            pesquisarNumero();
-            menu(); // reiniciando o menu
+        } else if (escolha == 3) {
+            pesquisarNumero(rl, function () {
+                menu(); // reiniciando o menu
+            });
             
         } else if(escolha == 4) {
             mostrarRegistroSistema();
@@ -51,6 +52,7 @@ function menu() {
         
         } else if(escolha == 0) {
             console.log("Fim algoritmo!");
+            rl.close()
             
         } else {
             console.log("escolha inválida!");
