@@ -75,16 +75,16 @@ bingo_grupo04_uc2_transforme-se_130_senac/
 │   └── database.js
 │
 ├── functions/
-│   ├── sortearNumeros.js
 │   ├── mostrarHistorico.js
-│   ├── pesquisarNumero.js
 │   ├── mostrarRegistroSistema.js
-│   └── reiniciarBingo.js
+│   ├── numerosSorteadosEmOrdem.js
+│   ├── pesquisarNumero.js
+│   ├── reiniciarBingo.js
+│   └── sortearNumeros.js
 │
 ├── docs/
 │   ├── proposta.pdf
-│   ├── requisitos.pdf
-│   └── diagramas/
+│   └── fluxograma.png
 │
 └── README.md
 ```
@@ -155,14 +155,15 @@ node main.js
 
 ## 🎮 Menu do Sistema
 
-| Opção | Descrição                   |
-| ----- | --------------------------- |
-| 1     | Sortear números             |
-| 2     | Mostrar histórico           |
-| 3     | Pesquisar número            |
-| 4     | Mostrar registro do sistema |
-| 5     | Reiniciar bingo             |
-| 0     | Encerrar programa           |
+| Opção | Descrição                          |
+| ----- | ---------------------------------- |
+| 1     | Sortear números                    |
+| 2     | Mostrar histórico                  |
+| 3     | Pesquisar número                   |
+| 4     | Mostrar registro do sistema        |
+| 5     | Reiniciar bingo                    |
+| 6     | Mostrar números sorteados em ordem |
+| 0     | Encerrar programa                  |
 
 ---
 
@@ -192,10 +193,7 @@ A documentação complementar do projeto encontra-se na pasta:
 ```text
 docs/
 ├── proposta.pdf
-├── requisitos.pdf
-└── diagramas/
-    ├── fluxo.png
-    └── arquitetura.png
+└── fluxograma.png
 
 ```
 
