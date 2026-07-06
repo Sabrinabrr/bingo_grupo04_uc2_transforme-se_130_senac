@@ -1,5 +1,9 @@
+const { database } = require("../db/database.js");
+
 function mostrarHistorico() {
-    // lógica para mostrar historico..
+    console.log("Números disponíveis: ", database.numerosDisponiveis);
+    console.log("Números sorteados: ", database.numerosSorteados)
+    console.log("Último número sorteado: ", database.ultimoNumeroSorteado);
 
 }
 
