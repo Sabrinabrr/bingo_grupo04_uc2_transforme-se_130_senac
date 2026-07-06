@@ -43,8 +43,8 @@ O desenvolvimento foi realizado aplicando conceitos fundamentais de programaçã
 
 | Integrante      | Responsabilidade Principal                             |
 | --------------- | ------------------------------------------------------ |
-| Carlos Henrique | Menu do projeto e arquitetura                          |
 | Caio Cesar      | Implementação de funcionalidades, revisão e testes     |
+| Carlos Henrique | Menu do projeto e arquitetura                          |
 | Eduarda Santana | Implementação de funcionalidades                       |
 | Maria Helena    | Implementação de funcionalidades                       |
 | Sabrina Barros  | Planejamento e documentação                            |
