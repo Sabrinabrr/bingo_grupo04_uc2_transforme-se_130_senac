@@ -3,7 +3,7 @@
 const database = {
     numerosDisponiveis: [],
     numerosSorteados: [],
-    ultimoNumeroSorteado: null
+    ultimoNumeroSorteado: 0
 };
 
 // preenchendo os números disponíveis
