@@ -6,6 +6,7 @@ const { mostrarHistorico } = require("./functions/mostrarHistorico.js");
 const { pesquisarNumero } = require("./functions/pesquisarNumero.js");
 const { mostrarRegistroSistema } = require("./functions/mostrarRegistroSistema.js");
 const { reiniciarBingo } = require("./functions/reiniciarBingo.js");
+const { numerosSorteadosEmOrdem } = require("./functions/numerosSorteadosEmOrdem.js");
 
 // importando biblioteca para receber dados no terminal
 const readline = require("readline");
@@ -25,6 +26,7 @@ function menu() {
     console.log("[3] Pesquisar se número foi chamado");
     console.log("[4] Mostrar registro do sistema");
     console.log("[5] Reiniciar bingo");
+    console.log("[6] Mostrar números sorteados em ordem");
     console.log("[0] Encerrar o programa");
     rl.question("\nEscolha uma opção: ", function(escolha){
     
@@ -50,6 +52,10 @@ function menu() {
             reiniciarBingo();
             menu(); // reiniciando o menu
         
+        } else if(escolha == 6) {
+            numerosSorteadosEmOrdem();
+            menu(); // reiniciando o menu
+            
         } else if(escolha == 0) {
             console.log("Fim algoritmo!");
             rl.close()
